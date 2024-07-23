@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIA52EMFTQ6O55GPYZY"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 
@@ -47,7 +47,7 @@ resource "aws_instance" "vipul-iac" {
     delete_on_termination = true
     #iops = 150
     volume_size = 8
-    volume_type = "gp2"
+    volume_type = "gp3"
   }
   tags = {
     Name ="SERVER01"
